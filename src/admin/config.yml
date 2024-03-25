@@ -10,21 +10,6 @@ media_folder: "src/assets/images/blog"
 public_folder: "/assets/images/blog"
 
 collections:
-
-- label: "Therapists"
-  name: "therapists"
-  file: "src/content/_data/therapists.yml"
-  fields:
-      - { label: Name, name: name, widget: string }
-       - { label: Intro, name: intro, widget: markdown }
-      - label: Team
-        name: team
-        widget: list
-        fields:
-            - { label: Name, name: name, widget: string }
-            - { label: Position, name: position, widget: string }
-            - { label: Photo, name: photo, widget: image }
-
   - name: "blog"
     label: "Blog"
     folder: "src/content/blog"
