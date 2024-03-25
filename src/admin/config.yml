@@ -24,3 +24,20 @@ collections:
       - { label: "Featured Image", name: "image", widget: "image" }
       - { label: "Image Caption", name: "imageAlt", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
+
+- label: "Pages"
+  name: "pages"
+  files:
+      - label: "Therapists"
+        name: "therapists"
+        file: "src/content/_data/therapists.yml"
+        fields:
+            - { label: Name, name: name, widget: string }
+            - { label: Intro, name: intro, widget: markdown }
+            - label: Team
+              name: team
+              widget: list
+              fields:
+                  - { label: Name, name: name, widget: string }
+                  - { label: Position, name: position, widget: string }
+                  - { label: Photo, name: photo, widget: image }
