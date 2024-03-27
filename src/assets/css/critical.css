@@ -25,16 +25,17 @@
       transform: translateY(0);
     }
   }
-  #hero-1353 {
+  #hero-1350 {
     /* 250px - 500px - leaving extra space for the navigation */
     padding: clamp(15.625rem, 35.95vw, 25rem) 1rem 0;
-    padding-bottom: 0;
+    /* 200px - 250px */
+    padding-bottom: clamp(12.5rem, 16.5vw, 15.625rem);
     box-sizing: border-box;
     overflow: hidden;
     position: relative;
     z-index: 1;
   }
-  #hero-1353:before {
+  #hero-1350:before {
     /* Overlay */
     content: "";
     width: 100%;
@@ -51,7 +52,7 @@
     /* prevents the cursor from interacting with it */
     pointer-events: none;
   }
-  #hero-1353 .cs-container {
+  #hero-1350 .cs-container {
     width: 100%;
     max-width: 80rem;
     margin: auto;
@@ -59,11 +60,8 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    /* 48px - 64px */
-    gap: clamp(3rem, 6vw, 4rem);
-    position: relative;
   }
-  #hero-1353 .cs-content {
+  #hero-1350 .cs-content {
     /* set text align to left if content needs to be left aligned */
     text-align: center;
     width: 100%;
@@ -73,7 +71,7 @@
     /* centers content horizontally, set to flex-start to left align */
     align-items: center;
   }
-  #hero-1353 .cs-topper {
+  #hero-1350 .cs-topper {
     font-size: 1.25rem;
     line-height: 1.2em;
     text-transform: uppercase;
@@ -84,7 +82,7 @@
     margin-bottom: 0.5rem;
     display: block;
   }
-  #hero-1353 .cs-title {
+  #hero-1350 .cs-title {
     /* 39px - 61px */
     font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
     font-weight: 700;
@@ -95,7 +93,7 @@
     color: #fff;
     position: relative;
   }
-  #hero-1353 .cs-text {
+  #hero-1350 .cs-text {
     font-size: 1.25rem;
     line-height: 1.5em;
     text-align: inherit;
@@ -105,7 +103,7 @@
     margin: 0 0 2.5rem 0;
     color: #e8e8e8;
   }
-  #hero-1353 .cs-button-solid {
+  #hero-1350 .cs-button-solid {
     font-size: 1rem;
     line-height: 3.5rem;
     text-decoration: none;
@@ -121,7 +119,7 @@
     z-index: 1;
     transition: color 0.3s;
   }
-  #hero-1353 .cs-button-solid:before {
+  #hero-1350 .cs-button-solid:before {
     content: "";
     position: absolute;
     display: block;
@@ -134,44 +132,30 @@
     z-index: -1;
     transition: width 0.3s;
   }
-  #hero-1353 .cs-button-solid:hover {
+  #hero-1350 .cs-button-solid:hover {
     color: var(--primary);
   }
-  #hero-1353 .cs-button-solid:hover:before {
+  #hero-1350 .cs-button-solid:hover:before {
     width: 100%;
   }
-  #hero-1353 .cs-picture {
-    width: 100%;
-    /* 427px - 621px */
-    max-width: clamp(26.6875rem, 75vw, 38.8125rem);
-    height: auto;
-    display: flex;
-    align-items: flex-end;
-    position: relative;
-    z-index: 7;
-  }
-  #hero-1353 .cs-picture img {
-    width: 100%;
-    height: auto;
-  }
-  #hero-1353 .cs-bubbles {
+  #hero-1350 .cs-bubbles {
     /* this scales the children inside of it down. They're all in ems so they pull from the parent font size for their value of em, in this case, the value of em is tied to the viewwidth size and stops growing when the font size is equal to 1em, which it pulls from the nearst parent with a declred font size (which is the html tag, and that tag is 16px by default) */
-    font-size: min(2.9vw, 0.9em);
+    font-size: min(2vw, 0.5em);
     position: absolute;
     z-index: -1;
   }
-  #hero-1353 .cs-bubbles1 {
+  #hero-1350 .cs-bubbles1 {
     width: 42.5em;
     height: 45.25em;
     right: -11.875rem;
     /* changes to 172 at large desktop */
-    bottom: -6.25em;
+    top: 0;
   }
-  #hero-1353 .cs-bubbles1:before {
+  #hero-1350 .cs-bubbles1:before {
     /* white border bubble */
     content: "";
     width: 38.875em;
-    height: 38.875em;
+    height: 38.875rem;
     background: transparent;
     border: 1px solid #fff;
     border-radius: 50%;
@@ -186,7 +170,7 @@
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
   }
-  #hero-1353 .cs-bubbles1:after {
+  #hero-1350 .cs-bubbles1:after {
     /* orange bubble */
     content: "";
     width: 34.125em;
@@ -205,15 +189,15 @@
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
   }
-  #hero-1353 .cs-bubbles2 {
+  #hero-1350 .cs-bubbles2 {
     width: 20.625rem;
     height: 29.75rem;
     /* changes to 160px at larger desktop */
-    left: -16.25rem;
+    left: -13.75rem;
     /* removed at larger desktop */
-    top: 3.75rem;
+    bottom: -16.25rem;
   }
-  #hero-1353 .cs-bubbles2:before {
+  #hero-1350 .cs-bubbles2:before {
     /* white border bubble */
     content: "";
     width: 20.625rem;
@@ -232,7 +216,7 @@
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
   }
-  #hero-1353 .cs-bubbles2:after {
+  #hero-1350 .cs-bubbles2:after {
     /* orange bubble */
     content: "";
     width: 16.25rem;
@@ -251,7 +235,7 @@
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
   }
-  #hero-1353 .cs-background {
+  #hero-1350 .cs-background {
     width: 100%;
     height: 100%;
     display: block;
@@ -260,7 +244,7 @@
     left: 0;
     z-index: -2;
   }
-  #hero-1353 .cs-background img {
+  #hero-1350 .cs-background img {
     position: absolute;
     top: 0;
     left: 0;
@@ -273,82 +257,43 @@
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #hero-1353 {
-    /* 180px - 250px */
-    padding-bottom: clamp(11.25rem, 16.5vw, 15.625rem);
-  }
-  #hero-1353 .cs-container {
-    flex-direction: row;
-    justify-content: flex-end;
-  }
-  #hero-1353 .cs-content {
-    text-align: left;
-    width: 53%;
-    align-items: flex-start;
-  }
-  #hero-1353 .cs-picture {
-    width: 100%;
-    position: absolute;
-    bottom: -25rem;
-    left: -14.375rem;
-  }
-  #hero-1353 .cs-bubbles {
+  #hero-1350 .cs-bubbles {
     font-size: 1em;
   }
-  #hero-1353 .cs-bubbles1 {
+  #hero-1350 .cs-bubbles1 {
     /* changes to auto at large desktop */
-    left: -18.75rem;
-  }
-  #hero-1353 .cs-bubbles2 {
-    left: auto;
-    right: -16.25rem;
-  }
-}
-/* Desktop - 1024px */
-@media only screen and (min-width: 48rem) {
-  #hero-1353 .cs-picture {
-    bottom: -14.375rem;
+    right: -26.75rem;
   }
 }
 /* Large Desktop - 1300px */
 @media only screen and (min-width: 81.25rem) {
-  #hero-1353 .cs-container {
-    position: initial;
-  }
-  #hero-1353 .cs-picture {
-    margin-right: 4.375rem;
-    right: 50%;
-    left: auto;
-    bottom: -1px;
-  }
-  #hero-1353 .cs-bubbles1 {
-    /* 200px - 580px */
-    margin-right: clamp(12.5rem, 20vw, 36.25rem);
+  #hero-1350 .cs-bubbles1 {
+    /* 200px - 450px */
+    margin-left: clamp(12.5rem, 20vw, 28.125rem);
     top: 10.75rem;
-    left: auto;
-    bottom: auto;
-    right: 50%;
+    right: auto;
+    left: 50%;
   }
 }
 /* Large Desktop Parallax Effect - 1600px */
 @media only screen and (min-width: 100rem) {
-  #hero-1353 .cs-background {
+  #hero-1350 .cs-background {
     background: url("https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/abstract.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
-  #hero-1353 .cs-background img {
+  #hero-1350 .cs-background img {
     display: none;
   }
 }
 /* Larger Desktop - 1800px */
 @media only screen and (min-width: 112.5rem) {
-  #hero-1353 .cs-bubbles2 {
-    margin-left: 50rem;
-    left: 50%;
-    right: auto;
+  #hero-1350 .cs-bubbles2 {
+    margin-right: 50rem;
+    right: 50%;
+    left: auto;
     top: 13.125rem;
     bottom: auto;
   }
